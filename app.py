@@ -9,10 +9,11 @@ def load_model():
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     return tokenizer, model
-
-# Charger le modèle et le tokenizer une seule fois
-tokenizer, model = load_model()
-
+try:
+    tokenizer, model = load_model()
+    st.write("Modèle chargé avec succès !")
+except Exception as e:
+    st.error(f"Erreur lors du chargement du modèle : {e}")
 # Interface Streamlit
 st.title("Résumé de Texte avec Long T5")
 
