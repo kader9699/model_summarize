@@ -15,7 +15,7 @@ try:
 except Exception as e:
     st.error(f"Erreur lors du chargement du modèle : {e}")
 # Interface Streamlit
-st.title("Résumé de Texte avec Long T5")
+st.title("Résumeur de document scientifique")
 
 # Entrée du texte à résumer
 input_text = st.text_area("Entrez votre texte ici :", height=300)
