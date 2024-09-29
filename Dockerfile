@@ -7,6 +7,8 @@ WORKDIR /app
 # Copier les fichiers nécessaires dans le conteneur
 COPY requirements.txt ./
 COPY app.py ./
+COPY text_preprocessing.py ./
+COPY extrac_text_from_pdf.py ./
 #COPY model ./model/
 
 
