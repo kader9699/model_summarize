@@ -1,3 +1,6 @@
 streamlit==1.35.0
-pandas==2.2.2
-numpy
+transformers
+torch
+PyMuPDF
+contractions
+nltk
